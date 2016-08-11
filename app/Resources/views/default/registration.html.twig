@@ -2,29 +2,7 @@
 
 {% block body %}
 
-{#
-<!-- Modal register-->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" style="text-align:center">Enregistrez-vous</h4>
-        </div>
-        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-        <div class="modal-body">
-          {{ form_widget(form) }}
-        </div>
-        <div class="modal-footer">
-          <div class="col-md-6 col-md-offset-5">
-           <input type="submit" class="btn btn-login btn-primary" style="text-align:center" value="{{ 'valider'|trans }}" />
-          </div>
-          {{ form_end(form) }}
-        </div>
-      </div>
-    </div>
-  </div>
-#}
+S'enregistrer :
+
 
 {% endblock %}

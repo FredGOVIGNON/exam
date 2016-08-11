@@ -2,7 +2,7 @@
 
 
 
-/*  HOME */
+/*  CSS COMMUN HOME et INDEX */
 
 .image-rio1{
     height: 400px;
@@ -79,7 +79,7 @@ iframe{
 }
 
 .icones{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .socialnetwork {
@@ -93,3 +93,80 @@ iframe{
 }
 
 
+/* CSS Modal home */
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+}
+
+/* Modal Body */
+
+.modal-body {
+    padding: 2px 16px;
+    height: 60px;
+    text-align: center;
+}
+
+/* Modal Footer */
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+}
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* CSS INDEX UNE FOIS CONNECTE */
+
+.nom-majuscule {
+    text-transform: uppercase;
+}
+
+
+/* CSS EPREUVE */
+
+.image-epreuve{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    position: center;
+}
+
+.texte-prognostics-epreuve{
+    padding-left: 10px;
+}
+
+form {
+    border: solid black 2px;
+}

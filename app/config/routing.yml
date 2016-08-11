@@ -6,17 +6,29 @@ home:
     path:    /home
     defaults: { _controller: AppBundle:Home:home }
 
-accueil3:
-    path:    /accueil3
-    defaults: { _controller: AppBundle:Accueil3:accueil3 }
+user_login:
+    path:     /home
+    defaults: { _controller: AppBundle:Home:login }
+
+user_login_check:
+    path:    /index
+    defaults: { _controller: AppBundle:Index:index}
+
+index:
+    path:    /index
+    defaults: { _controller: AppBundle:Index:index }
 
 user_register:
-    path:     /registration
-    defaults: { _controller: AppBundle:Registration:register }
+    path:     /register
+    defaults: { _controller: UserBundle:Registration:register }
 
 user_register_confirmed:
-    path:     /accueil3
-    defaults: { _controller: AppBundle:Accueil13:accueil13 }
+    path:     /index
+    defaults: { _controller: AppBundle:Index:index }
+
+prognostic:
+    path:    /prognostic
+    defaults: { _controller: AppBundle:Prognostic:prognostic }
 
 
 # app/config/routing.yml

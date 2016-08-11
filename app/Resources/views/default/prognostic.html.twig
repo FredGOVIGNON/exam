@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<a class="bouton-retour" href="./index">
+	<span class="glyphicon glyphicon-hand-left"></span>
+	<h3>Retour</h3></a>
+
+	    <div class="col-md-12">
+	      	<div class="col-md-11 col-md-offset-1">
+	      		{# exemple d'image pour la natation #}
+		<img src="{{ asset('img/natation.jpg') }}" alt="image épreuve" class="image-epreuve">
+			</div>
+		</div>
+
+<div class="texte-prognostics-epreuve">
+
+<div class="col-md-12 ">
+		{% for epreuve in allEpreuve %}
+ 			<div class="">
+		 		<div>
+		 			<h4>nom de l'épreuve : {{ epreuve.nom }}</h4>
+					<h4>description de l'épreuve : {{ epreuve.description }}</h4>
+				</div>
+			</div>
+		{% endfor %}
+</div>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus ac ex tempor malesuada. Mauris hendrerit neque nec placerat tempus. Sed lacinia interdum aliquam. Quisque tincidunt nibh nibh. Quisque mollis felis quis augue tempor, vel molestie libero auctor. Vivamus eget tellus in nisl tincidunt rhoncus. In congue bibendum nisl id suscipit. Fusce blandit enim placerat lectus convallis maximus euismod in libero. Aliquam et purus lacus. Vestibulum venenatis lectus et leo luctus laoreet.</p>
+</div>
+</br>
+<div class="col-md-12">
+	<div class="col-md-10 col-md-offset-1 progno">
+	<form action="{{ path('vote') }}" method="post">
+		<select name="epreuve" id="epreuve" class="select" placeholder="menu">
+		<option placeholder="placeholder">Liste des athlètes
+		</option>
+		{% for athlete in athletes %}
+		<option value="{{ athlete.id }}">{{ athlete.nom }}
+		</option>
+		{% endfor %}
+		</select>
+		</br>
+		</br>
+		<div class="btn-vote">
+			<input type="submit" class="btn btn-success" text-align: "center" value="Voter">
+		</div></br>
+	</form>
+	<div class="col-md-1">
+ </br>
+</div>
+<div class="col-md-12 ">
+		{% for vote in allVote|reverse %}
+ 			<div class="">
+		 		<row>
+					<h4>vote total de l'épreuve : {{ vote.idathlete.totalvalue }}</h4>
+		 			<h4>nom de l'athlète de l'épreuve : {{ vote.idathlete.nom }}</h4>
+				</row>
+			</div>
+		{% endfor %}
+</div>
+</br></br></br>
+<div class="row-blue">
+	<div class="col-md-12 icones">
+		<div class="col-md-3 col-md-offset-2 icone">
+			<img src="{{ asset('img/facebook.png') }}" alt="facebook" class="fb socialnetwork">
+		</div>
+		<div class="col-md-3 icone">
+			<img src="{{ asset('img/twitter.png') }}" alt="twitter" class="twit socialnetwork">
+		</div>
+		<div class="col-md-4 icone">
+			<img src="{{ asset('img/googleplus.png') }}" alt="google plus" class="gplus">
+		</div>
+	</div>
+</div>
+
+{% endblock %}

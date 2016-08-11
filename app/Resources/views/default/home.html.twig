@@ -14,6 +14,47 @@
 	        <ul class="nav navbar-nav navbar-right">
 	          <li class="btn-connexion">
 	            <a href="" class="txt-nav-bar" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-user"></span> Se connecter</a>
+	<!-- Modal login-->
+	  <div class="modal fade" id="myModal2" role="dialog">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title" style="text-align:center">Connexion</h4></br>
+	        </div>
+	        <form {# action="{{ path("fos_user_security_check") }}" method="post" #}>
+	          <div class="modal-body">
+	            {#<input {# type="hidden" name="_csrf_token" value="{{ csrf_token }}"  />#}
+	            <div class="col-md-6">
+	              <label for="username">Nom d'utilisateur</label>
+	            </div>
+	            <div class="col-md-6">
+	              <input {# type="text" id="username" name="_username" value="{{ last_username }}" required="required"  #}/></br>
+	            </div>
+	            <div class="col-md-6">
+	              <label for="password">Mot de passe</label>
+	            </div>
+	            <div class="col-md-6">
+	              <input {# type="password" id="password" name="_password" required="required" #} /></br></br>
+	            </div>
+	            </br>
+	          </div></br>
+	          <div class="modal-footer">
+	             <div class="col-md-6 col-md-offset-5">
+	              <input type="submit" class="btn btn-login btn-primary" id="_submit" name="_submit" value="Valider" />
+	            </div>
+	            </br>
+	          </div>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+
+
+
+
+
 	          </li>
 	        </ul>
 	      </div>
@@ -25,48 +66,8 @@
 		</div>
 	    </div>
 	  </nav>
-{#
-	<!-- Modal login-->
-	  <div class="modal fade" id="myModal2" role="dialog">
-	    <div class="modal-dialog">
-	      <!-- Modal content-->
-	      <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal">&times;</button>
-	          <h4 class="modal-title" style="text-align:center">Identifiez-vous pour vous connecter</h4>
-	        </div>
-	        <form action="{{ path("fos_user_security_check") }}" method="post">
-	          <div class="modal-body">
-	            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-	            <div class="col-md-6">
-	              <label for="username">Nom d'utilisateur</label>
-	            </div>
-	            <div class="col-md-6">
-	              <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" /></br>
-	            </div>
-	            <div class="col-md-6">
-	              <label for="password">Mot de passe</label>
-	            </div>
-	            <div class="col-md-6">
-	              <input type="password" id="password" name="_password" required="required" /></br>
-	            </div>
-	            </br>
-	            <div class="col-md-8 col-md-offset-4">
-	              <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-	              <label for="remember_me" style="text-align-center">se souvenir de moi</label></br></br>
-	            </div>
-	          </div>
-	          <div class="modal-footer">
-	             <div class="col-md-6 col-md-offset-5">
-	              <input type="submit" class="btn btn-login btn-primary" id="_submit" name="_submit" value="Valider" />
-	            </div>
-	            </br>
-	          </div>
-	        </form>
-	      </div>
-	    </div>
-	  </div>
-#}
+
+
 <h2 class="prochaines-epreuves">Prochaines épreuves</h2>
 <row class="epreuves">
 	<div class="col-md-12 bloc-epreuves">
