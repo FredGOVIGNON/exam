@@ -1,0 +1,27 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+home:
+    path:    /home
+    defaults: { _controller: AppBundle:Home:home }
+
+accueil3:
+    path:    /accueil3
+    defaults: { _controller: AppBundle:Accueil3:accueil3 }
+
+user_register:
+    path:     /registration
+    defaults: { _controller: AppBundle:Registration:register }
+
+user_register_confirmed:
+    path:     /accueil3
+    defaults: { _controller: AppBundle:Accueil13:accueil13 }
+
+
+# app/config/routing.yml
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+
+

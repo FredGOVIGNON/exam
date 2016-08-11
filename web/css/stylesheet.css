@@ -1,0 +1,95 @@
+/* BASE */
+
+
+
+/*  HOME */
+
+.image-rio1{
+    height: 400px;
+    width: 90%;
+    position: relative;
+    position: center;
+}
+
+.se-connecter{
+    position : absolute;
+}
+
+.prochaines-epreuves{
+    color: black;
+    margin-left: 30px;
+}
+
+.photo-natation{
+    width: 100%;
+}
+
+.photo-escrime{
+    width: 100%;
+}
+
+.photo-golf{
+    width: 90%;
+}
+
+.more{
+    padding-left: 300px;
+    width: 95%;
+}
+
+.texte{
+    border: solid black 2px;
+}
+
+.photo-filet{
+    position: absolute;
+    width: 100%;
+}
+
+.row-filet{
+    padding-bottom: 700px;
+}
+
+iframe{
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    padding-left: 200px;
+    padding-top: 200px;
+}
+
+.videotxt{
+    position : absolute;
+}
+
+.legende-video{
+    padding-top: 200px;
+    padding-left: 86px;
+}
+
+.legendevideo{
+    color: white;
+    background-color: rgba(34, 167, 240, 0.8);
+    height: 300px;
+}
+
+.row-blue{
+    background-color: #22A7F0;
+    height: 190px;
+}
+
+.icones{
+    padding-top: 20px;
+}
+
+.socialnetwork {
+    width: 50%;
+    border-radius: 250px;
+}
+
+.gplus {
+    width: 36%;
+    border-radius: 250px;
+}
+
+
